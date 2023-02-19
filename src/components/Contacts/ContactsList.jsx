@@ -1,5 +1,3 @@
-import { Component } from "react";
-import css from "./Contacts.module.css"
 import PropTypes from 'prop-types';
 
 export const ContactsList = ({ showFilteredContacts, OnClickDelete}) => {
@@ -30,6 +28,6 @@ return (
 };
 
 ContactsList.propTypes = {
-  hshowFilteredContacts: PropTypes.func.isRequired,
-  OnClickDelete: PropTypes.func.isRequired,
+showFilteredContacts: PropTypes.array.isRequired,
+OnClickDelete: PropTypes.func.isRequired,
 };
